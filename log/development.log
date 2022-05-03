@@ -406,3 +406,1953 @@ Processing by BoardsController#new as HTML
 Completed 200 OK in 1044ms (Views: 977.6ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT GET_LOCK('5277929974492897470', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (8.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('5277929974492897470')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `boards`[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'boards'[0m
+Started GET "/" for 172.20.0.1 at 2022-05-03 02:02:40 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (8.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/bundle/gems/railties-5.0.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.0.7.2/lib/rails/templates/rails/welcome/index.html.erb (21.8ms)
+Completed 200 OK in 128ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:07:19 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (7.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 4394ms (Views: 4272.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards" for 172.20.0.1 at 2022-05-03 02:12:36 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 422ms (Views: 384.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards" for 172.20.0.1 at 2022-05-03 02:14:30 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 550ms (Views: 504.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:14:32 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 490ms (Views: 452.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:39:16 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 254ms (ActiveRecord: 4.4ms)
+
+
+  
+SyntaxError (/app/app/views/boards/new.html.erb:9: syntax error, unexpected '=', expecting keyword_end
+'.freeze;     =f.label :name, '名前'  
+               ^
+/app/app/views/boards/new.html.erb:13: syntax error, unexpected '=', expecting keyword_end
+'.freeze;     =f.label :title, 'タイトル'
+               ^
+/app/app/views/boards/new.html.erb:17: syntax error, unexpected '=', expecting keyword_end
+'.freeze;     =f.label :body, '本文'  
+               ^
+/app/app/views/boards/new.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/boards/new.html.erb:9: syntax error, unexpected '=', expecting keyword_end
+app/views/boards/new.html.erb:13: syntax error, unexpected '=', expecting keyword_end
+app/views/boards/new.html.erb:17: syntax error, unexpected '=', expecting keyword_end
+app/views/boards/new.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.0ms)
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:39:39 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (39.5ms)
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    4:     <a href="/boards" class="btn btn-outline-dark">掲示板一覧</a>
+    5:   </div>
+    6: </div>
+    7: <%= form_for @doard do |f| %>
+    8:   <div class="form-group">
+    9:     <%= f.label :name, '名前'  %>
+   10:     <& f.text_field :name, class: 'form-control' %>
+  
+app/views/boards/new.html.erb:7:in `_app_views_boards_new_html_erb___477527802143238424_70192803968020'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.7ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.7ms)
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:40:23 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (57.5ms)
+Completed 200 OK in 576ms (Views: 523.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:42:34 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 624ms (Views: 591.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:43:15 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/boards/new.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+dy, class: 'form-control' rows: 10 
+                              ^
+/app/app/views/boards/new.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/boards/new.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/boards/new.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (17.1ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.3ms)
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:44:22 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/boards/new.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+dy, class: 'form-control' rows: 10 
+                              ^
+/app/app/views/boards/new.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/boards/new.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/boards/new.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (17.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.9ms)
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:44:44 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/boards/new.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+dy, class: 'form-control' rows: 10 
+                              ^
+/app/app/views/boards/new.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/boards/new.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/boards/new.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (23.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.9ms)
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:45:44 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/boards/new.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+dy, class: 'form-control' rows: 10 
+                              ^
+/app/app/views/boards/new.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/boards/new.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/boards/new.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.1ms)
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:46:58 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (287.4ms)
+Completed 500 Internal Server Error in 417ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `text_arer' for #<ActionView::Helpers::FormBuilder:0x00007fae12b3afc0>):
+    15:   </div>
+    16:   <div class="form-group">
+    17:     <%= f.label :body, '本文'  %>
+    18:     <% f.text_arer :body, class: 'form-control', rows: 10 %>
+    19:   </div>
+    20:   <%= f.submit '保存', class: 'btn btn-primary' %>
+    21: <% end %>
+  
+app/views/boards/new.html.erb:18:in `block in _app_views_boards_new_html_erb___477527802143238424_70192885437240'
+app/views/boards/new.html.erb:7:in `_app_views_boards_new_html_erb___477527802143238424_70192885437240'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.5ms)
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:48:11 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (259.2ms)
+Completed 500 Internal Server Error in 418ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `text_arer' for #<ActionView::Helpers::FormBuilder:0x00007fae1411a2f0>):
+    15:   </div>
+    16:   <div class="form-group">
+    17:     <%= f.label :body, '本文'  %>
+    18:     # <% f.text_arer :body, class: 'form-control', rows: 10 %>
+    19:   </div>
+    20:   <%= f.submit '保存', class: 'btn btn-primary' %>
+    21: <% end %>
+  
+app/views/boards/new.html.erb:18:in `block in _app_views_boards_new_html_erb___477527802143238424_70192818924300'
+app/views/boards/new.html.erb:7:in `_app_views_boards_new_html_erb___477527802143238424_70192818924300'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (25.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.2ms)
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:48:51 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (267.2ms)
+Completed 500 Internal Server Error in 431ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `text_arer' for #<ActionView::Helpers::FormBuilder:0x00007fae1190eb08>):
+    15:   </div>
+    16:   <div class="form-group">
+    17:     <%= f.label :body, '本文' %>
+    18:     <%= f.text_arer :body, class: 'form-control', rows: 10 %>
+    19:   </div>
+    20:   <%= f.submit '保存', class: 'btn btn-primary' %>
+    21: <% end %>
+  
+app/views/boards/new.html.erb:18:in `block in _app_views_boards_new_html_erb___477527802143238424_70192798181320'
+app/views/boards/new.html.erb:7:in `_app_views_boards_new_html_erb___477527802143238424_70192798181320'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.1ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.6ms)
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:49:19 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (274.1ms)
+Completed 500 Internal Server Error in 475ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `text_arer' for #<ActionView::Helpers::FormBuilder:0x00007fae04245f68>):
+    15:   </div>
+    16:   <div class="form-group">
+    17:     <%= f.label :body, '本文' %>
+    18:     <%= f.text_arer :body, class: 'form-control', rows: 10 %>
+    19:   </div>
+    20:   <%= f.submit '保存', class: 'btn btn-primary' %>
+    21: <% end %>
+  
+app/views/boards/new.html.erb:18:in `block in _app_views_boards_new_html_erb___477527802143238424_70192685329660'
+app/views/boards/new.html.erb:7:in `_app_views_boards_new_html_erb___477527802143238424_70192685329660'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.3ms)
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 02:50:21 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 542ms (Views: 500.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 06:21:09 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fae12a03cd8>):
+  
+app/controllers/boards_controller.rb:7:in `new'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (23.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (173.5ms)
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 06:22:28 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BoardsController#new as HTML
+Started GET "/boards/new" for 172.18.0.1 at 2022-05-03 06:26:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (8.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BoardsController#new as HTML
+Started GET "/boards/new" for 172.18.0.1 at 2022-05-03 06:28:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (8.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (353.9ms)
+Completed 200 OK in 11454ms (Views: 10941.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/boards/new" for 172.18.0.1 at 2022-05-03 06:29:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+Started GET "/boards/new" for 172.18.0.1 at 2022-05-03 06:30:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/boards/new" for 172.18.0.1 at 2022-05-03 06:52:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BoardsController#new as HTML
+Started GET "/boards/new" for 172.18.0.1 at 2022-05-03 06:59:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BoardsController#new as HTML
+Started GET "/boards/new" for 172.18.0.1 at 2022-05-03 07:05:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+Started GET "/boards/new" for 172.18.0.1 at 2022-05-03 07:08:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/boards" for 172.19.0.1 at 2022-05-03 07:13:39 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (8.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (72.7ms)
+Completed 200 OK in 16319ms (Views: 16123.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 172.19.0.1 at 2022-05-03 07:14:08 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (288.4ms)
+Completed 200 OK in 1576ms (Views: 1337.9ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/boards" for 172.19.0.1 at 2022-05-03 07:34:25 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/boards"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered collection of /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (3.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (26.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (104.1ms)
+Started POST "/boards" for 172.19.0.1 at 2022-05-03 07:35:20 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/boards"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered collection of /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (5.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.6ms)
+Started POST "/boards" for 172.19.0.1 at 2022-05-03 07:35:58 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7epwmeNVi9A20jM+VADszK6/KRrmmL5fsdSpm6Qs3iUvHUR0BkxB84AMdhexf3vVN0OtR0zhuP6pLHyFp/7YZg==", "board"=>{"name"=>"tanaka", "title"=>"こんにちは", "body"=>"友達募集中です"}, "commit"=>"保存"}
+No template found for BoardsController#create, rendering head :no_content
+Completed 204 No Content in 54614ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/boards" for 172.19.0.1 at 2022-05-03 07:40:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7epwmeNVi9A20jM+VADszK6/KRrmmL5fsdSpm6Qs3iUvHUR0BkxB84AMdhexf3vVN0OtR0zhuP6pLHyFp/7YZg==", "board"=>{"name"=>"tanaka", "title"=>"こんにちは", "body"=>"友達募集中です"}, "commit"=>"保存"}
+No template found for BoardsController#create, rendering head :no_content
+Completed 204 No Content in 6186ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/boards" for 172.19.0.1 at 2022-05-03 07:41:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7epwmeNVi9A20jM+VADszK6/KRrmmL5fsdSpm6Qs3iUvHUR0BkxB84AMdhexf3vVN0OtR0zhuP6pLHyFp/7YZg==", "board"=>{"name"=>"tanaka", "title"=>"こんにちは", "body"=>"友達募集中です"}, "commit"=>"保存"}
+No template found for BoardsController#create, rendering head :no_content
+Completed 204 No Content in 5993ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/boards" for 172.19.0.1 at 2022-05-03 07:41:54 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7epwmeNVi9A20jM+VADszK6/KRrmmL5fsdSpm6Qs3iUvHUR0BkxB84AMdhexf3vVN0OtR0zhuP6pLHyFp/7YZg==", "board"=>{"name"=>"tanaka", "title"=>"こんにちは", "body"=>"友達募集中です"}, "commit"=>"保存"}
+No template found for BoardsController#create, rendering head :no_content
+Completed 204 No Content in 40422ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/boards" for 172.19.0.1 at 2022-05-03 07:43:12 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7epwmeNVi9A20jM+VADszK6/KRrmmL5fsdSpm6Qs3iUvHUR0BkxB84AMdhexf3vVN0OtR0zhuP6pLHyFp/7YZg==", "board"=>{"name"=>"tanaka", "title"=>"こんにちは", "body"=>"友達募集中です"}, "commit"=>"保存"}
+Started GET "/boards" for 172.19.0.1 at 2022-05-03 07:43:22 +0000
+No template found for BoardsController#create, rendering head :no_content
+Completed 204 No Content in 3979ms (ActiveRecord: 0.0ms)
+
+
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 5583ms (Views: 5505.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 172.19.0.1 at 2022-05-03 07:43:31 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (412.6ms)
+Completed 200 OK in 2248ms (Views: 2060.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/boards/new" for 172.19.0.1 at 2022-05-03 07:44:21 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 1677ms (Views: 1284.3ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/boards" for 172.19.0.1 at 2022-05-03 07:44:34 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DswfPjNmJgdLVxl0OF9P83pO0jX87+eIQLKy9zh2NHxgfcs52gRtdd1lD3zdbhr5n6udJ67PSwUHPrxULk8mxQ==", "board"=>{"name"=>"", "title"=>"", "body"=>""}, "commit"=>"保存"}
+Started GET "/boards/new" for 172.19.0.1 at 2022-05-03 07:45:10 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 07:54:46 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (10.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (249.6ms)
+Completed 200 OK in 5975ms (Views: 5595.0ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/boards" for 172.20.0.1 at 2022-05-03 07:55:50 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"avCnBJSiIA1rGnWJ3OJ13KhvjC0euGRiXzPk7fbxLAb+a59/6qLIL0CB3wePuVHDAROTETS27Rl5eoAKnAdvjg==", "board"=>{"name"=>"tanaka", "title"=>"こんにちは", "body"=>"人脈つくりたい！！"}, "commit"=>"保存"}
+Started GET "/boards/new" for 172.20.0.1 at 2022-05-03 07:56:02 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 08:05:24 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (12.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (253.7ms)
+Completed 200 OK in 7630ms (Views: 7259.9ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/boards" for 172.21.0.1 at 2022-05-03 08:05:51 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9oOXKgHrEIEl8xDNAdNyxcedgXy1LmcHFFVb+AK+qLRiGK9Rf+v4ow5oukNSiFbabuGeQJ8g7nwyHD8faEjrPA==", "board"=>{"name"=>"tanaka", "title"=>"こんにちは", "body"=>"あああああああああ"}, "commit"=>"保存"}
+No template found for BoardsController#create, rendering head :no_content
+Completed 204 No Content in 5198ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 08:09:51 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1492ms (Views: 1333.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 08:18:53 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 1451ms (Views: 1270.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boards" for 172.21.0.1 at 2022-05-03 08:19:02 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/OTTgrEAZ9ffBJgV92FpGvtGmFU4gvudbcIxKjX+Mo6SVQeFWGIspUk2jh0SUDwQHqPXR2qiVxAqTj+JI8cgNw==", "board"=>{"name"=>"tanaka", "title"=>"こんにちは", "body"=>"あああああ"}, "commit"=>"保存"}
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 08:21:57 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 08:29:39 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (10.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 5550ms (Views: 5365.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 08:29:54 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (183.4ms)
+Completed 200 OK in 1978ms (Views: 1690.5ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/boards" for 172.21.0.1 at 2022-05-03 08:31:00 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mswIiMQMYo/x0OLmdBfBE/seJnlws+gRpQ2fYKUSrfJYOzxlIRWorEcOp8+RaFYKYuKiJNrK7rC99Up+psCrsQ==", "board"=>{"name"=>"tanaka", "title"=>"こんにちは", "body"=>"とてもいい天気ですね"}, "commit"=>"保存"}
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.3ms)[0m  [1m[32mINSERT INTO `boards` (`name`, `title`, `body`, `created_at`, `updated_at`) VALUES ('tanaka', 'こんにちは', 'とてもいい天気ですね', '2022-05-03 08:31:00', '2022-05-03 08:31:00')[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBoard Load (15.6ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 08:32:35 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 08:39:36 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (8.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (59.2ms)
+Completed 200 OK in 6931ms (Views: 6514.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 08:41:52 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (472.3ms)
+Completed 200 OK in 2532ms (Views: 2065.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 08:59:26 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.5ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (37.9ms)
+Completed 200 OK in 2947ms (Views: 2445.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 09:01:27 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.2ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 1803ms (Views: 1422.7ms | ActiveRecord: 21.5ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 09:03:24 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (8.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (2.0ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (59.1ms)
+Completed 200 OK in 6865ms (Views: 6477.3ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 09:04:15 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (433.7ms)
+Completed 200 OK in 2698ms (Views: 2131.5ms | ActiveRecord: 102.4ms)
+
+
+Started POST "/boards" for 172.21.0.1 at 2022-05-03 09:04:43 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CgiPr0ddvoHXOFjYzgO3Je0z5ZL/X1nM3p1QecZTNSPI/7tCokR0omHmHfErfCA8dM9hz1UmX23GZYVnxYEzYA==", "board"=>{"name"=>"tanaka", "title"=>"こんばんは", "body"=>"アプリケーション作成中"}, "commit"=>"保存"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `boards` (`name`, `title`, `body`, `created_at`, `updated_at`) VALUES ('tanaka', 'こんばんは', 'アプリケーション作成中', '2022-05-03 09:04:43', '2022-05-03 09:04:43')[0m
+  [1m[35m (13.8ms)[0m  [1m[35mCOMMIT[0m
+No template found for BoardsController#create, rendering head :no_content
+Completed 204 No Content in 5994ms (ActiveRecord: 22.3ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 09:04:53 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 1440ms (Views: 1144.3ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/boards" for 172.21.0.1 at 2022-05-03 09:05:28 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vjV9DSNt7H1suOg1Cgwvb1hB86aKPk10z41z0Lmfw9HQhKkKyg+nD/qK/j3vPXplvaS8tNge4fmIAX1zr6bRaA==", "board"=>{"name"=>"tanaka", "title"=>"おはようございます", "body"=>"今日も一日頑張るぞいっ"}, "commit"=>"保存"}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO `boards` (`name`, `title`, `body`, `created_at`, `updated_at`) VALUES ('tanaka', 'おはようございます', '今日も一日頑張るぞいっ', '2022-05-03 09:05:28', '2022-05-03 09:05:28')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+No template found for BoardsController#create, rendering head :no_content
+Completed 204 No Content in 4958ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 09:05:34 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (7.0ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 1609ms (Views: 1168.3ms | ActiveRecord: 30.1ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 09:08:24 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.1ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (212.7ms)
+Completed 500 Internal Server Error in 791ms (ActiveRecord: 5.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `created_atc' for #<Board:0x00007f68980b19b0>):
+    20:         <th><%= board.id %></th>
+    21:         <td><%= board.title %></td>
+    22:         <td><%= board.name %></td>
+    23:         <td><%= board.created_atc.strftime('%Y年 %m月 %d日 %H時 %M分') %></td>
+    24:         <td><%= board.updated_at.strftime('%Y年 %m月 %d日 %H時 %M分') %></td>
+    25:       </tr>
+    26:     <% end %>
+  
+app/views/boards/index.html.erb:23:in `block in _app_views_boards_index_html_erb___3316327666612663497_70043556313540'
+app/views/boards/index.html.erb:18:in `_app_views_boards_index_html_erb___3316327666612663497_70043556313540'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.0ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.3ms)
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 09:08:42 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (3.0ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (103.0ms)
+Completed 500 Internal Server Error in 825ms (ActiveRecord: 8.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `created_atc' for #<Board:0x00007f68920dae38>):
+    20:         <th><%= board.id %></th>
+    21:         <td><%= board.title %></td>
+    22:         <td><%= board.name %></td>
+    23:         <td><%= board.created_atc.strftime('%Y年 %m月 %d日 %H時 %M分') %></td>
+    24:         <td><%= board.updated_at %></td>
+    25:       </tr>
+    26:     <% end %>
+  
+app/views/boards/index.html.erb:23:in `block in _app_views_boards_index_html_erb___3316327666612663497_70043552923420'
+app/views/boards/index.html.erb:18:in `_app_views_boards_index_html_erb___3316327666612663497_70043552923420'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (229.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (308.8ms)
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 09:09:54 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (174.8ms)
+Completed 500 Internal Server Error in 844ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `created_atc' for #<Board:0x00007f688c16a3b8>):
+    20:         <th><%= board.id %></th>
+    21:         <td><%= board.title %></td>
+    22:         <td><%= board.name %></td>
+    23:         <td><%= board.created_atc.strftime('%Y年%m月%d日 %H時%M分') %></td>
+    24:         <td><%= board.updated_at %></td>
+    25:       </tr>
+    26:     <% end %>
+  
+app/views/boards/index.html.erb:23:in `block in _app_views_boards_index_html_erb___3316327666612663497_70043502166960'
+app/views/boards/index.html.erb:18:in `_app_views_boards_index_html_erb___3316327666612663497_70043502166960'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (112.3ms)
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 09:10:21 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (10.4ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 1418ms (Views: 1027.0ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 09:16:02 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (8.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.5ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (49.5ms)
+Completed 200 OK in 5542ms (Views: 5243.3ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/boards/3" for 172.21.0.1 at 2022-05-03 09:34:51 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 406 Not Acceptable in 81153ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (BoardsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.7.2) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.7.2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.7.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.7.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.7.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.7.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.7.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.7.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.7.2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.7.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.7.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.7.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.7.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.7.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.7.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.7.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.7.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.7.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.7.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.7.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.7.2) lib/action_dispatch/routing/route_set.rb:727:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.7.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (18.1ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (143.8ms)
+Started GET "/boards/3" for 172.21.0.1 at 2022-05-03 09:37:26 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoard Load (3.7ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 3 LIMIT 1[0m
+Completed 406 Not Acceptable in 136992ms (ActiveRecord: 8.6ms)
+
+
+  
+ActionController::UnknownFormat (BoardsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.7.2) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.7.2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.7.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.7.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.7.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.7.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.7.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.7.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.7.2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.7.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.7.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.7.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.7.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.7.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.7.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.7.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.7.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.7.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.7.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.7.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.7.2) lib/action_dispatch/routing/route_set.rb:727:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.7.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (104.8ms)
+Started GET "/boards/3" for 172.21.0.1 at 2022-05-03 09:41:03 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoard Load (2.6ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 3 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1545ms (Views: 1063.3ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/boards/3" for 172.21.0.1 at 2022-05-03 09:42:44 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoard Load (0.6ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 3 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1401ms (Views: 939.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/boards/3" for 172.21.0.1 at 2022-05-03 09:44:11 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 3 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 2166ms (Views: 1790.3ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/rails/info/routes" for 172.21.0.1 at 2022-05-03 09:45:56 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/bundle/gems/railties-5.0.7.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [4 times] (2.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (124.9ms)
+  Rendered /usr/local/bundle/gems/railties-5.0.7.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (138.7ms)
+Completed 200 OK in 156ms (Views: 153.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 172.21.0.1 at 2022-05-03 09:49:41 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/bundle/gems/railties-5.0.7.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [4 times] (2.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.8ms)
+  Rendered /usr/local/bundle/gems/railties-5.0.7.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 65ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 09:53:10 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.8ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 1414ms (Views: 1159.3ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 09:53:51 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.1ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 1379ms (Views: 1109.5ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 09:53:58 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (68.2ms)
+Completed 200 OK in 2237ms (Views: 1941.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 09:56:18 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 1300ms (Views: 1016.7ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 09:56:24 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.5ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 1492ms (Views: 1266.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 09:56:30 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.9ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1795ms (Views: 1547.8ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 09:58:18 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (76.1ms)
+Completed 500 Internal Server Error in 1136ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"boards"} missing required keys: [:id]):
+    1: <div class="d-flex align-items-center">
+    2:   <h1>掲示板作成</h1>
+    3:   <div class="ml-auto boards__linkBox">
+    4:     <%= link_to '一覧', board_path, class: 'btn btn-outline-dark' %>
+    5:   </div>
+    6: </div>
+    7: <%= form_for @board do |f| %>
+  
+app/views/boards/new.html.erb:4:in `_app_views_boards_new_html_erb___4262437581360885638_69821907806100'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (23.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (41.0ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (185.5ms)
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 09:59:43 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.3ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 1586ms (Views: 1350.4ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 09:59:49 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (1.1ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1561ms (Views: 1372.1ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 09:59:53 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (3.3ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 2205ms (Views: 1696.7ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 10:00:01 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (3.6ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 1835ms (Views: 1424.6ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 10:00:57 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.3ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (50.1ms)
+Completed 200 OK in 1961ms (Views: 1684.9ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 10:01:07 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (344.8ms)
+Completed 500 Internal Server Error in 1181ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"boards"} missing required keys: [:id]):
+    1: <div class="d-flex align-items-center">
+    2:   <h1>掲示板作成</h1>
+    3:   <div class="ml-auto boards__linkBox">
+    4:     <%= link_to '一覧', board_path, class: 'btn btn-outline-dark' %>
+    5:   </div>
+    6: </div>
+    7: <%= form_for @board do |f| %>
+  
+app/views/boards/new.html.erb:4:in `_app_views_boards_new_html_erb___4262437581360885638_47412737347460'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (25.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.0ms)
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 10:02:03 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2112ms (Views: 1485.2ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 10:02:09 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.9ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 1746ms (Views: 1365.0ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 10:02:13 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (10.1ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 1753ms (Views: 1314.4ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 10:02:17 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (2.2ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1704ms (Views: 1424.1ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 10:02:50 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.7ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1590ms (Views: 1213.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 10:02:59 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (1.4ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1524ms (Views: 1180.5ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 10:03:04 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.0ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 1892ms (Views: 1599.4ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/boards/1/edit" for 172.21.0.1 at 2022-05-03 10:09:07 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (1.1ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered boards/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1223ms (Views: 1042.7ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/boards/1/edit" for 172.21.0.1 at 2022-05-03 10:12:55 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.6ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered boards/edit.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 1552ms (Views: 1273.9ms | ActiveRecord: 3.5ms)
+
+
+Started PATCH "/boards/1" for 172.21.0.1 at 2022-05-03 10:13:16 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x5DcJlPaNajtUXDtVGfBlOFYXxjPGNP8fzZ3xpPt1jGpIQghurh+2ntjZuWxVpSeBL0QCp04f3E4unllhdTEiA==", "board"=>{"name"=>"tanaka編集", "title"=>"こんにちは編集", "body"=>"編集とてもいい天気ですね"}, "commit"=>"保存", "id"=>"1"}
+  [1m[36mBoard Load (1.1ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 364ms (ActiveRecord: 7.5ms)
+
+
+  
+NameError (undefined local variable or method `doard_params' for #<BoardsController:0x00007f01380f9a20>):
+  
+app/controllers/boards_controller.rb:25:in `update'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (20.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (364.8ms)
+Started PATCH "/boards/1" for 172.21.0.1 at 2022-05-03 10:13:36 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x5DcJlPaNajtUXDtVGfBlOFYXxjPGNP8fzZ3xpPt1jGpIQghurh+2ntjZuWxVpSeBL0QCp04f3E4unllhdTEiA==", "board"=>{"name"=>"tanaka編集", "title"=>"こんにちは編集", "body"=>"編集とてもいい天気ですね"}, "commit"=>"保存", "id"=>"1"}
+  [1m[36mBoard Load (1.9ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.5ms)[0m  [1m[33mUPDATE `boards` SET `name` = 'tanaka編集', `title` = 'こんにちは編集', `body` = '編集とてもいい天気ですね', `updated_at` = '2022-05-03 10:13:36' WHERE `boards`.`id` = 1[0m
+  [1m[35m (10.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/boards/1
+Completed 302 Found in 161ms (ActiveRecord: 22.1ms)
+
+
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 10:13:37 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.6ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1442ms (Views: 1219.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/rails/info/routes" for 172.21.0.1 at 2022-05-03 10:14:38 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/bundle/gems/railties-5.0.7.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [7 times] (5.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.9ms)
+  Rendered /usr/local/bundle/gems/railties-5.0.7.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 10:17:16 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.5ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 3005ms (Views: 2271.9ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 10:17:23 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (3.5ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (538.2ms)
+Completed 500 Internal Server Error in 1671ms (ActiveRecord: 10.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_boards_path' for #<#<Class:0x00007f0150ba5cb8>:0x00007f0150ba4b88>):
+    1: <div class="d-flex align-items-center mt-4 mb-4">
+    2:   <div class="ml-auto boards__linkBox">
+    3:     <%= link_to '一覧', boards_path, class: 'btn btn-outline-dark' %>
+    4:     <%= link_to '編集', edit_boards_path(@board), class: 'btn btn-outline-dark' %>
+    5:     
+    6:   </div>
+    7: </div>
+  
+app/views/boards/show.html.erb:4:in `_app_views_boards_show_html_erb__3906787888095429088_69821813043880'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (24.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (120.1ms)
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 10:18:00 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (2.0ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 1393ms (Views: 1146.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 10:18:04 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.2ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 1616ms (Views: 1408.8ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 10:18:07 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 1787ms (Views: 1610.9ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 10:18:12 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.8ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (26.9ms)
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 10:18:14 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Completed 200 OK in 2008ms (Views: 1672.3ms | ActiveRecord: 9.8ms)
+
+
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (2.2ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 1837ms (Views: 1353.7ms | ActiveRecord: 46.7ms)
+
+
+Started GET "/boards/1/edit" for 172.21.0.1 at 2022-05-03 10:18:21 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (1.1ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered boards/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 2277ms (Views: 1846.1ms | ActiveRecord: 46.6ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 10:18:27 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.5ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 1597ms (Views: 1412.1ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 10:22:41 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/_form.html.erb (7.6ms)
+  Rendered boards/new.html.erb within layouts/application (173.0ms)
+Completed 200 OK in 2775ms (Views: 2402.0ms | ActiveRecord: 28.6ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 10:25:40 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.1ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 2332ms (Views: 1985.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 10:25:42 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 769ms (ActiveRecord: 4.5ms)
+
+
+  
+SyntaxError (/app/app/views/boards/new.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+ render partial: 'form' locals: { board: @board} );@output_b
+                              ^):
+  
+app/views/boards/new.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (43.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (183.7ms)
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 10:26:12 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/_form.html.erb (3.2ms)
+  Rendered boards/new.html.erb within layouts/application (114.2ms)
+Completed 200 OK in 1539ms (Views: 1177.1ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 10:27:24 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.3ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 2000ms (Views: 1476.4ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/boards/2" for 172.21.0.1 at 2022-05-03 10:27:29 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 2 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 2084ms (Views: 1492.4ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/boards/2/edit" for 172.21.0.1 at 2022-05-03 10:27:34 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoard Load (1.4ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 2 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered boards/_form.html.erb (4.0ms)
+  Rendered boards/edit.html.erb within layouts/application (270.7ms)
+Completed 200 OK in 2523ms (Views: 2107.3ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 10:33:17 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (6.2ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (43.3ms)
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 10:33:20 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Completed 200 OK in 2173ms (Views: 1862.8ms | ActiveRecord: 13.2ms)
+
+
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (2.7ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2117ms (Views: 1670.4ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 10:33:27 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (2.2ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (72.2ms)
+Completed 200 OK in 2117ms (Views: 1798.1ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 10:37:07 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/_form.html.erb (3.7ms)
+  Rendered boards/new.html.erb within layouts/application (162.8ms)
+Completed 200 OK in 2382ms (Views: 1831.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 10:37:13 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 10:37:14 +0000
+  Rendering boards/index.html.erb within layouts/application
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mBoard Load (22.7ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (51.3ms)
+Completed 200 OK in 2049ms (Views: 1763.4ms | ActiveRecord: 24.9ms)
+
+
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (1.0ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/_board.html.erb (8.1ms)
+  Rendered boards/show.html.erb within layouts/application (159.5ms)
+Completed 200 OK in 1835ms (Views: 1496.0ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/boards/1/edit" for 172.21.0.1 at 2022-05-03 10:38:16 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (1.2ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered boards/_form.html.erb (3.1ms)
+  Rendered boards/edit.html.erb within layouts/application (270.9ms)
+Completed 200 OK in 1997ms (Views: 1692.1ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 10:38:20 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (2.0ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (23.5ms)
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 10:38:22 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Completed 200 OK in 2353ms (Views: 1926.5ms | ActiveRecord: 4.5ms)
+
+
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (1.3ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/_board.html.erb (3.5ms)
+  Rendered boards/show.html.erb within layouts/application (131.9ms)
+Completed 200 OK in 1633ms (Views: 1291.8ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 10:39:04 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (2.2ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/_board.html.erb (17.9ms)
+  Rendered boards/show.html.erb within layouts/application (137.6ms)
+Completed 200 OK in 1592ms (Views: 1315.6ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 10:42:16 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (1.0ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/_board.html.erb (1.9ms)
+  Rendered boards/show.html.erb within layouts/application (134.6ms)
+Completed 200 OK in 1509ms (Views: 1262.6ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 10:42:19 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.3ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 2026ms (Views: 1487.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 12:10:11 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/_form.html.erb (8.2ms)
+  Rendered boards/new.html.erb within layouts/application (131.3ms)
+Completed 200 OK in 1942ms (Views: 1574.9ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/boards" for 172.21.0.1 at 2022-05-03 12:10:22 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rw4KllBIduXWHmlIjslbLG8AJpltfACAT3kjuuQrWDeF+T57tVG8xmDALGFrtsw19vyixMcFBiFXgfak5/ledA==", "board"=>{"name"=>"あ", "title"=>"ｂ", "body"=>"ｃ"}, "commit"=>"保存"}
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO `boards` (`name`, `title`, `body`, `created_at`, `updated_at`) VALUES ('あ', 'ｂ', 'ｃ', '2022-05-03 12:10:22', '2022-05-03 12:10:22')[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/boards/4
+Completed 302 Found in 238ms (ActiveRecord: 13.9ms)
+
+
+Started GET "/boards/4" for 172.21.0.1 at 2022-05-03 12:10:22 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (1.2ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 4 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/_board.html.erb (2.3ms)
+  Rendered boards/show.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 1883ms (Views: 1545.7ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 12:10:28 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 804ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/boards/index.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+ 'btn btn-outline-dark' method: :delete );@output_buffer.saf
+                              ^):
+  
+app/views/boards/index.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.7ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (154.2ms)
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 12:11:34 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.6ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1436ms (Views: 1296.1ms | ActiveRecord: 3.9ms)
+
+
+Started DELETE "/boards/4" for 172.21.0.1 at 2022-05-03 12:11:39 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"70qR7lPW9BR1LSn2v0cleI64TuiyhXLBMBNTT1Vhc7mB+0XpurS/ZuMfP/5adnBya10B+uCl3kx3n13sQ1hhAA==", "id"=>"4"}
+  [1m[36mBoard Load (1.0ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 4 LIMIT 1[0m
+  [1m[35mSQL (21.7ms)[0m  [1m[31mDELETE FROM `boards` WHERE `boards`.`id` = 4[0m
+Redirected to http://localhost:3000/boards/4
+Completed 302 Found in 304ms (ActiveRecord: 27.6ms)
+
+
+Started GET "/boards/4" for 172.21.0.1 at 2022-05-03 12:11:40 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (2.8ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 4 LIMIT 1[0m
+Completed 404 Not Found in 136ms (ActiveRecord: 8.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Board with 'id'=4):
+  
+app/controllers/boards_controller.rb:16:in `show'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (109.5ms)
+Started GET "/boards/4" for 172.21.0.1 at 2022-05-03 12:13:01 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (1.4ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 4 LIMIT 1[0m
+Completed 404 Not Found in 213ms (ActiveRecord: 6.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Board with 'id'=4):
+  
+app/controllers/boards_controller.rb:16:in `show'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (21.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (108.8ms)
+Started GET "/boards/4" for 172.21.0.1 at 2022-05-03 12:13:53 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (1.8ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 4 LIMIT 1[0m
+Completed 404 Not Found in 109ms (ActiveRecord: 8.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Board with 'id'=4):
+  
+app/controllers/boards_controller.rb:16:in `show'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (175.3ms)
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 12:14:04 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.9ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 1255ms (Views: 995.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 12:15:13 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/_form.html.erb (3.7ms)
+  Rendered boards/new.html.erb within layouts/application (145.6ms)
+Completed 200 OK in 1823ms (Views: 1373.4ms | ActiveRecord: 7.5ms)
+
+
+Started POST "/boards" for 172.21.0.1 at 2022-05-03 12:15:21 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gNhDIGKmexVGudI42L4kg9w41uIFDjvj3qZe1oPkV5VCL3fNh7+xNvBnlxE9wbOaRcRSv693PULGXovIgDZR1g==", "board"=>{"name"=>"a", "title"=>"a", "body"=>"a"}, "commit"=>"保存"}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO `boards` (`name`, `title`, `body`, `created_at`, `updated_at`) VALUES ('a', 'a', 'a', '2022-05-03 12:15:21', '2022-05-03 12:15:21')[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/boards/5
+Completed 302 Found in 205ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/boards/5" for 172.21.0.1 at 2022-05-03 12:15:22 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBoard Load (1.2ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 5 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/_board.html.erb (1.5ms)
+  Rendered boards/show.html.erb within layouts/application (181.5ms)
+Completed 200 OK in 1967ms (Views: 1687.4ms | ActiveRecord: 22.2ms)
+
+
+Started GET "/boards/5/edit" for 172.21.0.1 at 2022-05-03 12:15:27 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBoard Load (1.3ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 5 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered boards/_form.html.erb (3.2ms)
+  Rendered boards/edit.html.erb within layouts/application (147.8ms)
+Completed 200 OK in 2145ms (Views: 1696.0ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 12:15:32 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.5ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 1781ms (Views: 1594.3ms | ActiveRecord: 9.8ms)
+
+
+Started DELETE "/boards/5" for 172.21.0.1 at 2022-05-03 12:15:36 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"09SeH9MEiQl6oFxO9hdtAUOVTpJLCz6yxvC0I0Y4AQu9ZUoYOmbCe+ySSkYTJjgLpnABgBkrkj+BfLqAUAETsg==", "id"=>"5"}
+  [1m[36mBoard Load (1.3ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 5 LIMIT 1[0m
+  [1m[35mSQL (11.3ms)[0m  [1m[31mDELETE FROM `boards` WHERE `boards`.`id` = 5[0m
+Redirected to http://localhost:3000/boards
+Completed 302 Found in 192ms (ActiveRecord: 15.8ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 12:15:37 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.0ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 1641ms (Views: 1366.2ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/boards/new" for 172.21.0.1 at 2022-05-03 12:27:46 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#new as HTML
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/_form.html.erb (3.8ms)
+  Rendered boards/new.html.erb within layouts/application (211.1ms)
+Completed 200 OK in 2109ms (Views: 1706.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 12:27:51 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+Started GET "/boards/1" for 172.21.0.1 at 2022-05-03 12:27:52 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.7ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (63.2ms)
+Completed 200 OK in 1694ms (Views: 1327.4ms | ActiveRecord: 8.3ms)
+
+
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (1.3ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/_board.html.erb (5.1ms)
+  Rendered boards/show.html.erb within layouts/application (154.0ms)
+Completed 200 OK in 2041ms (Views: 1617.8ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/boards/1/edit" for 172.21.0.1 at 2022-05-03 12:27:59 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (1.4ms)[0m  [1m[34mSELECT  `boards`.* FROM `boards` WHERE `boards`.`id` = 1 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered boards/_form.html.erb (12.0ms)
+  Rendered boards/edit.html.erb within layouts/application (184.3ms)
+Completed 200 OK in 1993ms (Views: 1665.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/boards" for 172.21.0.1 at 2022-05-03 12:28:03 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.4ms)[0m  [1m[34mSELECT `boards`.* FROM `boards`[0m
+  Rendered boards/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 1790ms (Views: 1335.3ms | ActiveRecord: 14.6ms)
+
+
