@@ -8314,3 +8314,451 @@ app/views/boards/edit.html.erb:7:in `_app_views_boards_edit_html_erb__4096353589
   Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
   Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.8ms)
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-07 14:43:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (6.4ms)[0m  [1m[34m
+	SELECT
+		`schema_migrations`. *
+	FROM
+		`schema_migrations`[0m
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.7ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  [1m[36mTag Load (1.0ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  Rendered boards/_form.html.erb (1321.1ms)
+  Rendered boards/edit.html.erb within layouts/application (1464.1ms)
+Completed 500 Internal Server Error in 2350ms (ActiveRecord: 8.8ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Board::BoardTagRelation):
+    28:     <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
+    29:       <div class="form-check">
+    30:         <%= tag.label class: 'form-check-label' do %>
+    31:           <%= tag.check_box class: 'form-check-input' %>
+    32:           <%= tag.text %>
+    33:         <% end %>
+    34:       </div>
+  
+app/views/boards/_form.html.erb:31:in `block (3 levels) in _app_views_boards__form_html_erb__101145792421655284_46913062771860'
+app/views/boards/_form.html.erb:30:in `block (2 levels) in _app_views_boards__form_html_erb__101145792421655284_46913062771860'
+app/views/boards/_form.html.erb:28:in `block in _app_views_boards__form_html_erb__101145792421655284_46913062771860'
+app/views/boards/_form.html.erb:13:in `_app_views_boards__form_html_erb__101145792421655284_46913062771860'
+app/views/boards/edit.html.erb:7:in `_app_views_boards_edit_html_erb___2770663571050310400_46913063205160'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (18.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (163.2ms)
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-08 14:39:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (6.5ms)[0m  [1m[34m
+	SELECT
+		`schema_migrations`. *
+	FROM
+		`schema_migrations`[0m
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.9ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  [1m[36mTag Load (1.9ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  Rendered boards/_form.html.erb (983.5ms)
+  Rendered boards/edit.html.erb within layouts/application (1170.9ms)
+Completed 500 Internal Server Error in 1780ms (ActiveRecord: 10.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Board::BoardTagRelation):
+    28:     <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
+    29:       <div class="form-check">
+    30:         <%= tag.label class: 'form-check-label' do %>
+    31:           <%= tag.check_box class: 'form-check-input' %>
+    32:           <%= tag.text %>
+    33:         <% end %>
+    34:       </div>
+  
+app/views/boards/_form.html.erb:31:in `block (3 levels) in _app_views_boards__form_html_erb___35682337256012081_47363851431600'
+app/views/boards/_form.html.erb:30:in `block (2 levels) in _app_views_boards__form_html_erb___35682337256012081_47363851431600'
+app/views/boards/_form.html.erb:28:in `block in _app_views_boards__form_html_erb___35682337256012081_47363851431600'
+app/views/boards/_form.html.erb:13:in `_app_views_boards__form_html_erb___35682337256012081_47363851431600'
+app/views/boards/edit.html.erb:7:in `_app_views_boards_edit_html_erb__2452763551890201948_47363851822400'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (16.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.7ms)
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-08 14:40:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (3.5ms)
+  [1m[36mTag Load (1.1ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  Rendered boards/_form.html.erb (509.8ms)
+  Rendered boards/edit.html.erb within layouts/application (697.5ms)
+Completed 500 Internal Server Error in 1431ms (ActiveRecord: 9.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Board::BoardTagRelation):
+    28:     <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
+    29:       <div class="form-check">
+    30:         <%= tag.label class: 'form-check-label' do %>
+    31:           <%= tag.check_box class: 'form-check-input' %>
+    32:           <%= tag.text %>
+    33:         <% end %>
+    34:       </div>
+  
+app/views/boards/_form.html.erb:31:in `block (3 levels) in _app_views_boards__form_html_erb___35682337256012081_69889294121920'
+app/views/boards/_form.html.erb:30:in `block (2 levels) in _app_views_boards__form_html_erb___35682337256012081_69889294121920'
+app/views/boards/_form.html.erb:28:in `block in _app_views_boards__form_html_erb___35682337256012081_69889294121920'
+app/views/boards/_form.html.erb:13:in `_app_views_boards__form_html_erb___35682337256012081_69889294121920'
+app/views/boards/edit.html.erb:7:in `_app_views_boards_edit_html_erb__2452763551890201948_69889294193380'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (19.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (135.5ms)
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-08 14:47:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.9ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  [1m[36mTag Load (0.9ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  Rendered boards/_form.html.erb (531.5ms)
+  Rendered boards/edit.html.erb within layouts/application (594.8ms)
+Completed 500 Internal Server Error in 1131ms (ActiveRecord: 7.7ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Board::BoardTagRelation):
+    28:     <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
+    29:       <div class="form-check">
+    30:         <%= tag.label class: 'form-check-label' do %>
+    31:           <%= tag.check_box class: 'form-check-input' %>
+    32:           <%= tag.text %>
+    33:         <% end %>
+    34:       </div>
+  
+app/views/boards/_form.html.erb:31:in `block (3 levels) in _app_views_boards__form_html_erb___35682337256012081_69889294470920'
+app/views/boards/_form.html.erb:30:in `block (2 levels) in _app_views_boards__form_html_erb___35682337256012081_69889294470920'
+app/views/boards/_form.html.erb:28:in `block in _app_views_boards__form_html_erb___35682337256012081_69889294470920'
+app/views/boards/_form.html.erb:13:in `_app_views_boards__form_html_erb___35682337256012081_69889294470920'
+app/views/boards/edit.html.erb:7:in `_app_views_boards_edit_html_erb__2452763551890201948_69889294517780'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (20.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.4ms)
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-08 14:48:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.7ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.1ms)
+  [1m[36mTag Load (1.2ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  Rendered boards/_form.html.erb (545.0ms)
+  Rendered boards/edit.html.erb within layouts/application (620.6ms)
+Completed 500 Internal Server Error in 1112ms (ActiveRecord: 6.4ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Board::BoardTagRelation):
+    28:     <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
+    29:       <div class="form-check">
+    30:         <%= tag.label class: 'form-check-label' do %>
+    31:           <%= tag.check_box class: 'form-check-input' %>
+    32:           <%= tag.text %>
+    33:         <% end %>
+    34:       </div>
+  
+app/views/boards/_form.html.erb:31:in `block (3 levels) in _app_views_boards__form_html_erb___35682337256012081_69889294400080'
+app/views/boards/_form.html.erb:30:in `block (2 levels) in _app_views_boards__form_html_erb___35682337256012081_69889294400080'
+app/views/boards/_form.html.erb:28:in `block in _app_views_boards__form_html_erb___35682337256012081_69889294400080'
+app/views/boards/_form.html.erb:13:in `_app_views_boards__form_html_erb___35682337256012081_69889294400080'
+app/views/boards/edit.html.erb:7:in `_app_views_boards_edit_html_erb__2452763551890201948_69889294432820'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (18.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.1ms)
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-08 14:49:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.9ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.2ms)
+  [1m[36mTag Load (2.3ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  Rendered boards/_form.html.erb (693.7ms)
+  Rendered boards/edit.html.erb within layouts/application (772.7ms)
+Completed 500 Internal Server Error in 1378ms (ActiveRecord: 20.5ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Board::BoardTagRelation):
+    28:     <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
+    29:       <div class="form-check">
+    30:         <%= tag.label class: 'form-check-label' do %>
+    31:           <%= tag.check_box class: 'form-check-input' %>
+    32:           <%= tag.text %>
+    33:         <% end %>
+    34:       </div>
+  
+app/views/boards/_form.html.erb:31:in `block (3 levels) in _app_views_boards__form_html_erb___35682337256012081_69889293792520'
+app/views/boards/_form.html.erb:30:in `block (2 levels) in _app_views_boards__form_html_erb___35682337256012081_69889293792520'
+app/views/boards/_form.html.erb:28:in `block in _app_views_boards__form_html_erb___35682337256012081_69889293792520'
+app/views/boards/_form.html.erb:13:in `_app_views_boards__form_html_erb___35682337256012081_69889293792520'
+app/views/boards/edit.html.erb:7:in `_app_views_boards_edit_html_erb__2452763551890201948_69889293856620'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.0ms)
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-08 14:50:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (Unable to autoload constant Board, expected /app/app/models/board.rb to define it):
+  
+app/controllers/boards_controller.rb:57:in `set_target_board'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.3ms)
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-08 14:51:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (1.4ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.2ms)
+  [1m[36mTag Load (1.0ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  Rendered boards/_form.html.erb (376.1ms)
+  Rendered boards/edit.html.erb within layouts/application (431.6ms)
+Completed 500 Internal Server Error in 766ms (ActiveRecord: 6.9ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Board::BoardTagRelation):
+    28:     <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
+    29:       <div class="form-check">
+    30:         <%= tag.label class: 'form-check-label' do %>
+    31:           <%= tag.check_box class: 'form-check-input' %>
+    32:           <%= tag.text %>
+    33:         <% end %>
+    34:       </div>
+  
+app/views/boards/_form.html.erb:31:in `block (3 levels) in _app_views_boards__form_html_erb___35682337256012081_69889295775560'
+app/views/boards/_form.html.erb:30:in `block (2 levels) in _app_views_boards__form_html_erb___35682337256012081_69889295775560'
+app/views/boards/_form.html.erb:28:in `block in _app_views_boards__form_html_erb___35682337256012081_69889295775560'
+app/views/boards/_form.html.erb:13:in `_app_views_boards__form_html_erb___35682337256012081_69889295775560'
+app/views/boards/edit.html.erb:7:in `_app_views_boards_edit_html_erb__2452763551890201948_69889295838200'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.1ms)
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-08 14:53:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.2ms)
+  [1m[36mTag Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  Rendered boards/_form.html.erb (426.8ms)
+  Rendered boards/edit.html.erb within layouts/application (493.4ms)
+Completed 500 Internal Server Error in 1115ms (ActiveRecord: 6.5ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Board::BoardTagRelation):
+    28:     <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
+    29:       <div class="form-check">
+    30:         <%= tag.label class: 'form-check-label' do %>
+    31:           <%= tag.check_box class: 'form-check-input' %>
+    32:           <%= tag.text %>
+    33:         <% end %>
+    34:       </div>
+  
+app/views/boards/_form.html.erb:31:in `block (3 levels) in _app_views_boards__form_html_erb___35682337256012081_69889294867220'
+app/views/boards/_form.html.erb:30:in `block (2 levels) in _app_views_boards__form_html_erb___35682337256012081_69889294867220'
+app/views/boards/_form.html.erb:28:in `block in _app_views_boards__form_html_erb___35682337256012081_69889294867220'
+app/views/boards/_form.html.erb:13:in `_app_views_boards__form_html_erb___35682337256012081_69889294867220'
+app/views/boards/edit.html.erb:7:in `_app_views_boards_edit_html_erb__2452763551890201948_69889294906060'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.7ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.6ms)
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-08 14:54:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (6.5ms)[0m  [1m[34m
+	SELECT
+		`schema_migrations`. *
+	FROM
+		`schema_migrations`[0m
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (1.0ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  [1m[36mTag Load (1.2ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  Rendered boards/_form.html.erb (874.0ms)
+  Rendered boards/edit.html.erb within layouts/application (994.9ms)
+Completed 500 Internal Server Error in 1925ms (ActiveRecord: 8.4ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Board::BoardTagRelation):
+    28:     <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
+    29:       <div class="form-check">
+    30:         <%= tag.label class: 'form-check-label' do %>
+    31:           <%= tag.check_box class: 'form-check-input' %>
+    32:           <%= tag.text %>
+    33:         <% end %>
+    34:       </div>
+  
+app/views/boards/_form.html.erb:31:in `block (3 levels) in _app_views_boards__form_html_erb__1001657905920603697_47406845958720'
+app/views/boards/_form.html.erb:30:in `block (2 levels) in _app_views_boards__form_html_erb__1001657905920603697_47406845958720'
+app/views/boards/_form.html.erb:28:in `block in _app_views_boards__form_html_erb__1001657905920603697_47406845958720'
+app/views/boards/_form.html.erb:13:in `_app_views_boards__form_html_erb__1001657905920603697_47406845958720'
+app/views/boards/edit.html.erb:7:in `_app_views_boards_edit_html_erb__481690413666996709_70304319745640'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.0ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.9ms)
