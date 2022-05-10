@@ -9187,3 +9187,391 @@ Processing by BoardsController#edit as HTML
 Completed 200 OK in 1714ms (Views: 1480.2ms | ActiveRecord: 9.0ms)
 
 
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-10 14:23:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.9ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.6ms)
+  [1m[36mTag Load (0.9ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  [1m[35m (0.9ms)[0m  [1m[34m
+	SELECT
+		`tags`.id
+	FROM
+		`tags` INNER JOIN `board_tag_relations`
+			ON `tags`.`id` = `board_tag_relations`.`tag_id`
+	WHERE
+		`board_tag_relations`.`board_id` = 6[0m
+  Rendered boards/_form.html.erb (690.3ms)
+  Rendered boards/edit.html.erb within layouts/application (777.4ms)
+Completed 200 OK in 2100ms (Views: 1835.1ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-10 14:24:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.9ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  [1m[36mTag Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  [1m[35m (1.0ms)[0m  [1m[34m
+	SELECT
+		`tags`.id
+	FROM
+		`tags` INNER JOIN `board_tag_relations`
+			ON `tags`.`id` = `board_tag_relations`.`tag_id`
+	WHERE
+		`board_tag_relations`.`board_id` = 6[0m
+  Rendered boards/_form.html.erb (442.1ms)
+  Rendered boards/edit.html.erb within layouts/application (502.1ms)
+Completed 200 OK in 1565ms (Views: 1377.3ms | ActiveRecord: 8.0ms)
+
+
+Started PATCH "/boards/6" for 172.18.0.1 at 2022-05-10 14:24:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#update as HTML
+  Parameters: 
+{
+                  "utf8"[0;37m => [0m[0;33m"✓"[0m,
+    "authenticity_token"[0;37m => [0m[0;33m"cpGnVMerZHCuXGb+JjSk/5xJoKh1xCftwZbzyCyaxmocIHNTLskvAjhucPbDBfH1eazvuifki2CGGv1rOqPU0w=="[0m,
+                 "board"[0;37m => [0m{
+           "name"[0;37m => [0m[0;33m"ユーザー1"[0m,
+          "title"[0;37m => [0m[0;33m"タイトル1"[0m,
+           "body"[0;37m => [0m[0;33m"本文1"[0m,
+        "tag_ids"[0;37m => [0m[
+            [1;37m[0] [0m[0;33m""[0m,
+            [1;37m[1] [0m[0;33m"1"[0m,
+            [1;37m[2] [0m[0;33m"2"[0m
+        ]
+    },
+                "commit"[0;37m => [0m[0;33m"保存"[0m,
+                    "id"[0;37m => [0m[0;33m"6"[0m
+}
+  [1m[36mBoard Load (1.2ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[35m
+	BEGIN[0m
+  [1m[36mTag Load (1.0ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`
+	WHERE
+		`tags`.`id` IN (
+			1
+			,2
+		)[0m
+  [1m[36mTag Load (1.0ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags` INNER JOIN `board_tag_relations`
+			ON `tags`.`id` = `board_tag_relations`.`tag_id`
+	WHERE
+		`board_tag_relations`.`board_id` = 6[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32m
+	INSERT
+	INTO
+		`board_tag_relations` (
+			`board_id`
+			,`tag_id`
+			,`created_at`
+			,`updated_at`
+		)
+	VALUES (
+		6
+		,1
+		,'2022-05-10 14:24:20'
+		,'2022-05-10 14:24:20'
+	)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32m
+	INSERT
+	INTO
+		`board_tag_relations` (
+			`board_id`
+			,`tag_id`
+			,`created_at`
+			,`updated_at`
+		)
+	VALUES (
+		6
+		,2
+		,'2022-05-10 14:24:21'
+		,'2022-05-10 14:24:21'
+	)[0m
+  [1m[35m (2.9ms)[0m  [1m[35m
+	COMMIT[0m
+Redirected to http://localhost:3000/boards/6
+Completed 302 Found in 990ms (ActiveRecord: 15.5ms)
+
+
+Started GET "/boards/6" for 172.18.0.1 at 2022-05-10 14:24:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  [1m[36mTag Load (0.9ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags` INNER JOIN `board_tag_relations`
+			ON `tags`.`id` = `board_tag_relations`.`tag_id`
+	WHERE
+		`board_tag_relations`.`board_id` = 6[0m
+  Rendered boards/_board.html.erb (384.6ms)
+  [1m[36mComment Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`comments`. *
+	FROM
+		`comments`
+	WHERE
+		`comments`.`board_id` = 6[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered shared/_error_messages.html.erb (1.4ms)
+  Rendered comments/_form.html.erb (77.0ms)
+  Rendered boards/show.html.erb within layouts/application (673.7ms)
+Completed 200 OK in 1705ms (Views: 1312.1ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/boards" for 172.18.0.1 at 2022-05-10 14:24:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.1ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards` LIMIT 10 OFFSET 0[0m
+  [1m[35m (3.6ms)[0m  [1m[34m
+	SELECT
+		COUNT( * )
+	FROM
+		`boards`[0m
+  Rendered boards/index.html.erb within layouts/application (1488.6ms)
+Completed 200 OK in 2236ms (Views: 2033.1ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/boards/6" for 172.18.0.1 at 2022-05-10 14:24:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/show.html.erb within layouts/application
+  [1m[36mTag Load (1.0ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags` INNER JOIN `board_tag_relations`
+			ON `tags`.`id` = `board_tag_relations`.`tag_id`
+	WHERE
+		`board_tag_relations`.`board_id` = 6[0m
+  Rendered boards/_board.html.erb (490.6ms)
+  [1m[36mComment Load (1.0ms)[0m  [1m[34m
+	SELECT
+		`comments`. *
+	FROM
+		`comments`
+	WHERE
+		`comments`.`board_id` = 6[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered shared/_error_messages.html.erb (1.5ms)
+  Rendered comments/_form.html.erb (72.4ms)
+  Rendered boards/show.html.erb within layouts/application (839.1ms)
+Completed 200 OK in 2107ms (Views: 1665.9ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-10 14:24:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (1.3ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  [1m[36mTag Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  [1m[35m (1.3ms)[0m  [1m[34m
+	SELECT
+		`tags`.id
+	FROM
+		`tags` INNER JOIN `board_tag_relations`
+			ON `tags`.`id` = `board_tag_relations`.`tag_id`
+	WHERE
+		`board_tag_relations`.`board_id` = 6[0m
+  Rendered boards/_form.html.erb (494.3ms)
+  Rendered boards/edit.html.erb within layouts/application (576.2ms)
+Completed 200 OK in 1928ms (Views: 1568.1ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-10 14:31:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.1ms)
+  [1m[36mTag Load (0.9ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  [1m[35m (0.9ms)[0m  [1m[34m
+	SELECT
+		`tags`.id
+	FROM
+		`tags` INNER JOIN `board_tag_relations`
+			ON `tags`.`id` = `board_tag_relations`.`tag_id`
+	WHERE
+		`board_tag_relations`.`board_id` = 6[0m
+  Rendered boards/_form.html.erb (583.2ms)
+  Rendered boards/edit.html.erb within layouts/application (669.8ms)
+Completed 200 OK in 1667ms (Views: 1478.8ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-10 14:32:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  [1m[36mTag Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  [1m[35m (0.7ms)[0m  [1m[34m
+	SELECT
+		`tags`.id
+	FROM
+		`tags` INNER JOIN `board_tag_relations`
+			ON `tags`.`id` = `board_tag_relations`.`tag_id`
+	WHERE
+		`board_tag_relations`.`board_id` = 6[0m
+  Rendered boards/_form.html.erb (438.6ms)
+  Rendered boards/edit.html.erb within layouts/application (536.4ms)
+Completed 200 OK in 1608ms (Views: 1288.6ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-10 14:33:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.7ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  [1m[36mTag Load (1.2ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  [1m[35m (0.9ms)[0m  [1m[34m
+	SELECT
+		`tags`.id
+	FROM
+		`tags` INNER JOIN `board_tag_relations`
+			ON `tags`.`id` = `board_tag_relations`.`tag_id`
+	WHERE
+		`board_tag_relations`.`board_id` = 6[0m
+  Rendered boards/_form.html.erb (440.7ms)
+  Rendered boards/edit.html.erb within layouts/application (527.8ms)
+Completed 200 OK in 1429ms (Views: 1239.5ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/boards/6/edit" for 172.18.0.1 at 2022-05-10 14:33:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.9ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards`
+	WHERE
+		`boards`.`id` = 6 LIMIT 1[0m
+  Rendering boards/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.4ms)
+  [1m[36mTag Load (0.7ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  [1m[35m (0.6ms)[0m  [1m[34m
+	SELECT
+		`tags`.id
+	FROM
+		`tags` INNER JOIN `board_tag_relations`
+			ON `tags`.`id` = `board_tag_relations`.`tag_id`
+	WHERE
+		`board_tag_relations`.`board_id` = 6[0m
+  Rendered boards/_form.html.erb (678.9ms)
+  Rendered boards/edit.html.erb within layouts/application (881.0ms)
+Completed 200 OK in 2043ms (Views: 1680.1ms | ActiveRecord: 9.0ms)
+
+
