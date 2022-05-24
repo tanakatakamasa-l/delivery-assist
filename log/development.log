@@ -9976,3 +9976,102 @@ Processing by BoardsController#show as HTML
 Completed 200 OK in 4784ms (Views: 4081.7ms | ActiveRecord: 23.2ms)
 
 
+  [1m[35m (0.8ms)[0m  [1m[34m
+	SELECT
+		DATABASE( ) AS db[0m
+  [1m[35m (0.7ms)[0m  [1m[34m
+	SELECT
+		GET_LOCK (
+			'5277929974492897470'
+			,0
+		)
+;[0m
+  [1m[36mActiveRecord::SchemaMigration Load (6.2ms)[0m  [1m[34m
+	SELECT
+		`schema_migrations`. *
+	FROM
+		`schema_migrations`[0m
+Migrating to CreateUsers (20220516134322)
+  [1m[35m (47.0ms)[0m  [1m[35m
+	CREATE
+	TABLE
+		`users` (
+			`id` INT AUTO_INCREMENT PRIMARY KEY
+			,`name` VARCHAR (255) NOT NULL
+			,`password_digest` VARCHAR (255) NOT NULL
+			,`created_at` datetime NOT NULL
+			,`updated_at` datetime NOT NULL
+		) ENGINE = InnoDB[0m
+  [1m[35m (25.7ms)[0m  [1m[35m
+	CREATE
+	UNIQUE INDEX `index_users_on_name`
+		ON `users` (`name`)[0m
+  [1m[35m (0.9ms)[0m  [1m[35m
+	BEGIN[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[32m
+	INSERT
+	INTO
+		`schema_migrations` (`version`)
+	VALUES ('20220516134322')[0m
+  [1m[35m (3.2ms)[0m  [1m[35m
+	COMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`ar_internal_metadata`. *
+	FROM
+		`ar_internal_metadata`
+	WHERE
+		`ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35m
+	BEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35m
+	COMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34m
+	SELECT
+		RELEASE_LOCK ('5277929974492897470')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`schema_migrations`. *
+	FROM
+		`schema_migrations`[0m
+  [1m[35m (0.8ms)[0m  [1m[35m
+	SHOW CREATE
+	TABLE
+		`board_tag_relations`[0m
+  [1m[35m (0.8ms)[0m  [1m[35m
+	SHOW CREATE
+	TABLE
+		`boards`[0m
+  [1m[35m (2.0ms)[0m  [1m[35m
+	SHOW TABLE
+	STATUS LIKE 'boards'[0m
+  [1m[35m (0.8ms)[0m  [1m[35m
+	SHOW CREATE
+	TABLE
+		`boark_tag_relations`[0m
+  [1m[35m (0.9ms)[0m  [1m[35m
+	SHOW CREATE
+	TABLE
+		`comments`[0m
+  [1m[35m (0.9ms)[0m  [1m[35m
+	SHOW TABLE
+	STATUS LIKE 'comments'[0m
+  [1m[35m (0.6ms)[0m  [1m[35m
+	SHOW CREATE
+	TABLE
+		`tags`[0m
+  [1m[35m (0.9ms)[0m  [1m[35m
+	SHOW TABLE
+	STATUS LIKE 'tags'[0m
+  [1m[35m (0.7ms)[0m  [1m[35m
+	SHOW CREATE
+	TABLE
+		`users`[0m
+  [1m[35m (0.9ms)[0m  [1m[35m
+	SHOW TABLE
+	STATUS LIKE 'users'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`schema_migrations`. *
+	FROM
+		`schema_migrations`[0m
