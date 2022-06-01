@@ -10142,3 +10142,259 @@ Processing by BoardsController#index as HTML
 Completed 200 OK in 3583ms (Views: 3395.7ms | ActiveRecord: 44.8ms)
 
 
+Started GET "/" for 172.18.0.1 at 2022-06-01 14:36:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (9.7ms)[0m  [1m[34m
+	SELECT
+		`schema_migrations`. *
+	FROM
+		`schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (26.7ms)
+  Rendered application/_header.html.erb (1.5ms)
+Completed 200 OK in 6112ms (Views: 5959.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 172.18.0.1 at 2022-06-01 14:36:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/app/app/controllers/users_controller.rb:24: syntax error, unexpected tSYMBEG, expecting ')'
+    params.require(:user).permit(:name, :password,
+                    ^):
+  
+app/controllers/users_controller.rb:24: syntax error, unexpected tSYMBEG, expecting ')'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.7ms)
+Started GET "/users/new" for 172.18.0.1 at 2022-06-01 14:37:36 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/app/app/controllers/users_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.9ms)
+Started GET "/users/new" for 172.18.0.1 at 2022-06-01 14:38:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/app/app/controllers/users_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.5ms)
+Started GET "/users/new" for 172.18.0.1 at 2022-06-01 14:38:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered users/_form.html.erb (465.1ms)
+  Rendered users/new.html.erb within layouts/application (536.5ms)
+  Rendered application/_header.html.erb (1.6ms)
+Completed 200 OK in 2256ms (Views: 1811.8ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/users" for 172.18.0.1 at 2022-06-01 14:38:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: 
+{
+                  "utf8"[0;37m => [0m[0;33m"✓"[0m,
+    "authenticity_token"[0;37m => [0m[0;33m"8t0Vf5qQK8zdG9dUPzLW61oGdNIG8S0fTSaYcVFiNJoXZiJTWPxsyXeY+GPCkzJABxEJxAl8hD2QWNEIIf7k/A=="[0m,
+                  "user"[0;37m => [0m{
+                         "name"[0;37m => [0m[0;33m""[0m,
+                     "password"[0;37m => [0m[0;33m"[FILTERED]"[0m,
+        "password_confirmation"[0;37m => [0m[0;33m"[FILTERED]"[0m
+    },
+                "commit"[0;37m => [0m[0;33m"作成"[0m
+}
+  [1m[35m (0.9ms)[0m  [1m[35m
+	BEGIN[0m
+  [1m[36mUser Exists (5.3ms)[0m  [1m[34m
+	SELECT
+		1 AS one
+	FROM
+		`users`
+	WHERE
+		`users`.`name` = BINARY '' LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[31m
+	ROLLBACK[0m
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from create at /app/app/controllers/users_controller.rb:12)
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 941ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/users/new" for 172.18.0.1 at 2022-06-01 14:38:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.2ms)
+  Rendered users/_form.html.erb (164.1ms)
+  Rendered users/new.html.erb within layouts/application (288.5ms)
+  Rendered application/_header.html.erb (2.8ms)
+Completed 200 OK in 1541ms (Views: 1378.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/new" for 172.18.0.1 at 2022-06-01 14:39:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered users/_form.html.erb (94.4ms)
+  Rendered users/new.html.erb within layouts/application (150.7ms)
+  Rendered application/_header.html.erb (3.7ms)
+Completed 200 OK in 2582ms (Views: 2201.5ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/users" for 172.18.0.1 at 2022-06-01 14:40:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: 
+{
+                  "utf8"[0;37m => [0m[0;33m"✓"[0m,
+    "authenticity_token"[0;37m => [0m[0;33m"EjkNoi8ZR+EKpYQaS78R8HIqAUpsFOu7lqk/Cv/I8Xn3gjqO7XUA5KAmqy22HvVbLz18XGOZQplL13Zzj1QhHw=="[0m,
+                  "user"[0;37m => [0m{
+                         "name"[0;37m => [0m[0;33m"TT"[0m,
+                     "password"[0;37m => [0m[0;33m"[FILTERED]"[0m,
+        "password_confirmation"[0;37m => [0m[0;33m"[FILTERED]"[0m
+    },
+                "commit"[0;37m => [0m[0;33m"作成"[0m
+}
+  [1m[35m (0.7ms)[0m  [1m[35m
+	BEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34m
+	SELECT
+		1 AS one
+	FROM
+		`users`
+	WHERE
+		`users`.`name` = BINARY 'TT' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[31m
+	ROLLBACK[0m
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from create at /app/app/controllers/users_controller.rb:12)
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 486ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/users/new" for 172.18.0.1 at 2022-06-01 14:40:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.3ms)
+  Rendered users/_form.html.erb (153.0ms)
+  Rendered users/new.html.erb within layouts/application (271.3ms)
+  Rendered application/_header.html.erb (2.0ms)
+Completed 200 OK in 1746ms (Views: 1556.1ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/users" for 172.18.0.1 at 2022-06-01 14:40:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: 
+{
+                  "utf8"[0;37m => [0m[0;33m"✓"[0m,
+    "authenticity_token"[0;37m => [0m[0;33m"we+x/5LuUS4pmFr8bA5B6rjPn/Qwxp97ytEZhHY7+xckVIbTUIIWK4MbdcuRr6VB5dji4j9LNlkXr1D9BqcrcQ=="[0m,
+                  "user"[0;37m => [0m{
+                         "name"[0;37m => [0m[0;33m"tt"[0m,
+                     "password"[0;37m => [0m[0;33m"[FILTERED]"[0m,
+        "password_confirmation"[0;37m => [0m[0;33m"[FILTERED]"[0m
+    },
+                "commit"[0;37m => [0m[0;33m"作成"[0m
+}
+  [1m[35m (0.7ms)[0m  [1m[35m
+	BEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34m
+	SELECT
+		1 AS one
+	FROM
+		`users`
+	WHERE
+		`users`.`name` = BINARY 'tt' LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[31m
+	ROLLBACK[0m
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from create at /app/app/controllers/users_controller.rb:12)
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 549ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/users/new" for 172.18.0.1 at 2022-06-01 14:40:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (13.0ms)
+  Rendered users/_form.html.erb (211.0ms)
+  Rendered users/new.html.erb within layouts/application (315.1ms)
+  Rendered application/_header.html.erb (2.0ms)
+Completed 200 OK in 1319ms (Views: 1114.5ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/users" for 172.18.0.1 at 2022-06-01 14:40:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: 
+{
+                  "utf8"[0;37m => [0m[0;33m"✓"[0m,
+    "authenticity_token"[0;37m => [0m[0;33m"lvXpuiDmxMDQmVtDjLl7E02myX+6qUfHiqzlAC8zZypzTt6W4oqDxXoadHRxGJ+4ELG0abUk7uVX0qx5X6+3TA=="[0m,
+                  "user"[0;37m => [0m{
+                         "name"[0;37m => [0m[0;33m"tt"[0m,
+                     "password"[0;37m => [0m[0;33m"[FILTERED]"[0m,
+        "password_confirmation"[0;37m => [0m[0;33m"[FILTERED]"[0m
+    },
+                "commit"[0;37m => [0m[0;33m"作成"[0m
+}
+  [1m[35m (0.7ms)[0m  [1m[35m
+	BEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34m
+	SELECT
+		1 AS one
+	FROM
+		`users`
+	WHERE
+		`users`.`name` = BINARY 'tt' LIMIT 1[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32m
+	INSERT
+	INTO
+		`users` (
+			`name`
+			,`password_digest`
+			,`created_at`
+			,`updated_at`
+		)
+	VALUES (
+		'tt'
+		,'$2a$12$82R.5QgvAT/Ks45wty8xs.uGHjRpopXBdZa1nkbeumo1siNbM7nAu'
+		,'2022-06-01 14:40:50'
+		,'2022-06-01 14:40:50'
+	)[0m
+  [1m[35m (8.5ms)[0m  [1m[35m
+	COMMIT[0m
+Redirected to http://localhost:3000/mypage
+Completed 302 Found in 609ms (ActiveRecord: 26.6ms)
+
+
+Started GET "/mypage" for 172.18.0.1 at 2022-06-01 14:40:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#me as HTML
+  Rendering users/me.html.erb within layouts/application
+  Rendered users/me.html.erb within layouts/application (0.6ms)
+  Rendered application/_header.html.erb (2.1ms)
+Completed 200 OK in 1399ms (Views: 1313.7ms | ActiveRecord: 0.0ms)
+
+
