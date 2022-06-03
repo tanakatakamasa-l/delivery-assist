@@ -10398,3 +10398,27 @@ Processing by UsersController#me as HTML
 Completed 200 OK in 1399ms (Views: 1313.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/boards" for 172.18.0.1 at 2022-06-02 06:28:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mTag Load (2.0ms)[0m  [1m[34m
+	SELECT
+		`tags`. *
+	FROM
+		`tags`[0m
+  [1m[36mBoard Load (1.1ms)[0m  [1m[34m
+	SELECT
+		`boards`. *
+	FROM
+		`boards` LIMIT 10 OFFSET 0[0m
+  [1m[35m (1.9ms)[0m  [1m[34m
+	SELECT
+		COUNT( * )
+	FROM
+		`boards`[0m
+  Rendered boards/index.html.erb within layouts/application (1054.8ms)
+  Rendered application/_header.html.erb (2.3ms)
+Completed 200 OK in 2436ms (Views: 2217.9ms | ActiveRecord: 10.6ms)
+
+
