@@ -10422,3 +10422,109 @@ Processing by BoardsController#index as HTML
 Completed 200 OK in 2436ms (Views: 2217.9ms | ActiveRecord: 10.6ms)
 
 
+Started GET "/" for 172.18.0.1 at 2022-06-06 11:10:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (26.6ms)[0m  [1m[34m
+	SELECT
+		`schema_migrations`. *
+	FROM
+		`schema_migrations`[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34m
+	SELECT
+		`users`. *
+	FROM
+		`users`
+	WHERE
+		`users`.`id` = 1 LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered users/_login_form.html.erb (223.6ms)
+  Rendered home/index.html.erb within layouts/application (336.2ms)
+  Rendered application/_header.html.erb (1.8ms)
+Completed 200 OK in 7440ms (Views: 6973.2ms | ActiveRecord: 10.3ms)
+
+
+Started POST "/login" for 172.18.0.1 at 2022-06-06 11:10:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: 
+{
+                  "utf8"[0;37m => [0m[0;33m"✓"[0m,
+    "authenticity_token"[0;37m => [0m[0;33m"JP/Sy8byhv8kpJEjKACqNYlVUWo5pClLcdM2K4OjAcfBROXnBJ7B+o4nvhTVoU6e1EIsfDYpgGmsrX9S8z/RoQ=="[0m,
+               "session"[0;37m => [0m{
+            "name"[0;37m => [0m[0;33m"11@11"[0m,
+        "password"[0;37m => [0m[0;33m"[FILTERED]"[0m
+    },
+                "commit"[0;37m => [0m[0;33m"ログイン"[0m
+}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34m
+	SELECT
+		`users`. *
+	FROM
+		`users`
+	WHERE
+		`users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34m
+	SELECT
+		`users`. *
+	FROM
+		`users`
+	WHERE
+		`users`.`name` = '11@11' LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered users/_login_form.html.erb (2.6ms)
+  Rendered home/index.html.erb within layouts/application (92.9ms)
+  Rendered application/_header.html.erb (12.6ms)
+Completed 200 OK in 2951ms (Views: 2706.9ms | ActiveRecord: 7.6ms)
+
+
+Started POST "/login" for 172.18.0.1 at 2022-06-06 11:11:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: 
+{
+                  "utf8"[0;37m => [0m[0;33m"✓"[0m,
+    "authenticity_token"[0;37m => [0m[0;33m"VWydEpsBxtd04elwWZFT5vm4gb2wHCruYN3n09y6J4+w16o+WW2B0t5ixkekMLdNpK/8q7+Rg8y9o66qrCb36Q=="[0m,
+               "session"[0;37m => [0m{
+            "name"[0;37m => [0m[0;33m"11@11"[0m,
+        "password"[0;37m => [0m[0;33m"[FILTERED]"[0m
+    },
+                "commit"[0;37m => [0m[0;33m"ログイン"[0m
+}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34m
+	SELECT
+		`users`. *
+	FROM
+		`users`
+	WHERE
+		`users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34m
+	SELECT
+		`users`. *
+	FROM
+		`users`
+	WHERE
+		`users`.`name` = '11@11' LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered users/_login_form.html.erb (5.7ms)
+  Rendered home/index.html.erb within layouts/application (92.2ms)
+  Rendered application/_header.html.erb (2.6ms)
+Completed 200 OK in 1533ms (Views: 1335.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/mypage" for 172.18.0.1 at 2022-06-06 11:12:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#me as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34m
+	SELECT
+		`users`. *
+	FROM
+		`users`
+	WHERE
+		`users`.`id` = 1 LIMIT 1[0m
+  Rendering users/me.html.erb within layouts/application
+  Rendered users/me.html.erb within layouts/application (0.5ms)
+  Rendered application/_header.html.erb (1.9ms)
+Completed 200 OK in 1474ms (Views: 1091.8ms | ActiveRecord: 5.9ms)
+
+
